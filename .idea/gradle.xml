@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/CProgressBar" />
             <option value="$PROJECT_DIR$/CSVWriter" />
             <option value="$PROJECT_DIR$/EvalAPI" />
             <option value="$PROJECT_DIR$/OtherFunctions" />

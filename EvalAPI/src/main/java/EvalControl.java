@@ -1,5 +1,9 @@
+import ProgressBar.*;
+import CSWriter.*;
+import OtherFunction.*;
+
 public interface EvalControl {
-//    void registerProgressBar(ProgressBar bar);
-//    void registerCSVWriter(CSVWriter writer);
-//    void registerOtherFunctions(OtherFunction of);
+    void registerProgressBar(ProgressBar callBack);
+    void registerCSVWriter(CSVWriter callBack);
+    void registerOtherFunctions(OtherFunction callBack);
 }

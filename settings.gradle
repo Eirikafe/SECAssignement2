@@ -1,5 +1,3 @@
 rootProject.name = 'EquationEvaluator'
-include 'ProgressBar'
-include 'CSVWriter'
-include 'OtherFunctions'
-include 'EvalAPI'
+include 'ProgressBar', 'EvalAPI', 'OtherFunctions', 'CSVWriter', 'CProgressBar'
+
