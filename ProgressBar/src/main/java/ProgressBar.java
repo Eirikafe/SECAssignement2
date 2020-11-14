@@ -1,21 +1,25 @@
 public class ProgressBar implements EvaluatorPlugin
 {
-   public void ProgressBar()
+    private EvalControl api;
+    private double min, max, increment, current, progress;
+
+    @Override
+    public void start(EvalControl api)
     {
-        double min = 0.0;
-        double max = 0.0;
-        double increment = 1.0;
-        double current = 0.0;
-        double progress = 0.0;
+
     }
 
-    public void registerProgressBar(double inMin, double inMax, double inIncrement, ProgressBar callBack)
+    //initializes the progress bar fields
+    public void ProgressBar()
     {
-        this.min = inMin;
-        this.max = inMax;
-        this.increment = inIncrement;
+        min = 0.0;
+        max = 0.0;
+        increment = 1.0;
+        current = 0.0;
+        progress = 0.0;
     }
 
+    //displays the progress bar in the console, uses \r to rewrite on the same line
     public void displayProgress(double inCurrent, double inMax)
     {
         progress = inCurrent / inMax;

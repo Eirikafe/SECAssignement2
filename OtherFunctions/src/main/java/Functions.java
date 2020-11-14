@@ -1,5 +1,19 @@
 public class Functions {
-    static double Gamma(double x)
+    private EvalControl api;
+    @Override
+    public void start(EvalControl api)
+    {
+
+    }
+
+    public void Functions()
+    {
+
+    }
+
+    //method used to calculate factorials. It is only an estimation and seems convoluted because we were told that they would be used in complex ways
+    //this equation can find factorial values for fractions, for example.
+    public static double Gamma(double x)
     {
         x++;
         double tmp = (x - 0.5) * Math.log(x + 4.5) - (x + 4.5);
@@ -10,7 +24,8 @@ public class Functions {
         return Math.exp(logy);
     }
 
-    static double Fibonacci(double x)
+    //same with the above method, but for fibonacci's sequence. This equation can estimate more complex fibonnaci values
+    public static double Fibonacci(double x)
     {
         double Phi = 1.6180339887;
         double phi = 0.6180339887;
